@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+package-lock.json
+node_modules/*
+.env
+=======
+# Ignore environment variables
+.env
+
+# Ignore node dependencies
+node_modules/
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+>>>>>>> 45ec0f27ff141e89eae0c2eb3a9aa9ff2a753ecd

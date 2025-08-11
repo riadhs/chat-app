@@ -1,0 +1,32 @@
+{
+<<<<<<< HEAD
+  "name": "chatapp",
+  "version": "1.0.0",
+=======
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+>>>>>>> 45ec0f27ff141e89eae0c2eb3a9aa9ff2a753ecd
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+<<<<<<< HEAD
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.0",
+    "socket.io": "^4.8.1"
+  }
+}
+=======
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
+>>>>>>> 45ec0f27ff141e89eae0c2eb3a9aa9ff2a753ecd

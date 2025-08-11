@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Private Chat</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>StrangerTalk</h2>
+  <div id="username-container">
+    <input id="username" placeholder="Enter your name" />
+    <button onclick="setUsername()">Join</button>
+  </div>
+  <div id="chat-container" style="display: none;">
+    <div id="users">
+      <h3>Online Users</h3>
+      <div id="user-list"></div>
+    </div>
+    <div id="chat">
+      <h3>Chat with: <span id="chat-with">None</span></h3>
+      <div id="messages" style="height: 300px; overflow-y: auto;"></div>
+      <p id="typing-indicator" class="typing"></p>
+      <input
+        id="message-input"
+        placeholder="Type a message..."
+        oninput="sendTyping()"
+        onblur="stopTyping()"
+      />
+      <button onclick="sendMessage()">Send</button>
+
+      <!-- Image upload section -->
+      <input type="file" id="image-input" accept="image/*" />
+      <button onclick="uploadImage()">Send Image</button>
+    </div>
+  </div>
+</body>
+</html>
